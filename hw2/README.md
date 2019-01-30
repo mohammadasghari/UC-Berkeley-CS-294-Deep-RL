@@ -18,11 +18,11 @@ Below you can see some cool videos showing the comparison between the learning a
 ### Problem 4. CartPole:
 1. *Compare the learning curves (average return at each iteration) with small batches (batch size of 1000) under three different settings: vanilla policy gradient (sb_no_rtg_dna), policy gradient with reward to go (sb_rtg_dna), policy gradient with reward to go and advantage normalization (sb_rtg_na).*
 
-<img src="./figures/p4_sb.png" height="400px" width="700px" >
+<img src="./figures/p4_sb.png" height="400px" width="500px" >
 
 2. *Compare the learning curves (average return at each iteration) with large batches (batch size of 5000) under three different settings: vanilla policy gradient (sb_no_rtg_dna), policy gradient with reward to go (sb_rtg_dna), policy gradient with reward to go and advantage normalization (sb_rtg_na).*
 
-<img src="./figures/p4_lb.png" height="400px" width="700px" >
+<img src="./figures/p4_lb.png" height="400px" width="500px" >
 
 3. *Answer the following questions briefly:*
 
@@ -37,7 +37,7 @@ Below you can see some cool videos showing the comparison between the learning a
 
 	To better see the impact of batch size, I have compared the performance for different batch sizes in the following figure. As we can see from the figure, larger batch sizes stabilize the training process and result in smoother curves.
 
-<img src="./figures/p4_sb_lb.png" height="400px" width="700px" >
+<img src="./figures/p4_sb_lb.png" height="400px" width="500px" >
 
 
 4. *Provide the exact command line configurations you used to run your experiments.* 
@@ -58,7 +58,7 @@ Below you can see some cool videos showing the comparison between the learning a
 
 1. *Given the best batch size and best learning rate you found, provide a learning curve where the policy gets to optimum (maximum score of 1000) in less than 100 iterations.*
 
-<img src="./figures/p5.png" height="400px" width="700px" >
+<img src="./figures/p5.png" height="400px" width="500px" >
 
 2. *Provide the exact command line configurations you used to run your experiments.* 
 
@@ -76,7 +76,7 @@ Below you can see some cool videos showing the comparison between the learning a
 
 ```
 
-<img src="./figures/p7.png" height="400px" width="700px" >
+<img src="./figures/p7.png" height="400px" width="500px" >
 
 ### Problem 8: HalfCheetah:
 
@@ -86,20 +86,20 @@ Below you can see some cool videos showing the comparison between the learning a
    python train_pg_f18.py HalfCheetah-v2 -ep 150 --discount 0.9 -n 100 -e 3 -l 2 -s 32 -b <b> -lr <r> -rtg --nn_baseline --exp_name hc_b<b>_r<r>
 
 ```
-<img src="./figures/p8_0.02.png" height="400px" width="700px" >
+<img src="./figures/p8_0.02.png" height="400px" width="500px" >
 
 As we can see from the above figures, for the learning rate of 0.02 (the same behavior was observed for the learning rates of 0.005 and 0.01), **as the batch size increases, the training speeds up and the AverageReturn increases**.
 
 
-<img src="./figures/p8_10000.png" height="400px" width="700px" >
-<img src="./figures/p8_30000.png" height="400px" width="700px" >
-<img src="./figures/p8_50000.png" height="400px" width="700px" >
+<img src="./figures/p8_10000.png" height="400px" width="500px" >
+<img src="./figures/p8_30000.png" height="400px" width="500px" >
+<img src="./figures/p8_50000.png" height="400px" width="500px" >
 
 As we can see from the above three figures, for all batch sizes of  [10000, 30000, 50000], as the learning rate increases, the training speeds up and the AverageReturn increases. But is that really the case?! The larger the learning rate, the better and faster the training?! Figures below show the effect of learning rates of [0.0025, 0.005, 0.01, 0.02, 0.04] on the performance.
 
-<img src="./figures/p8_10000_cmp.png" height="400px" width="700px" >
-<img src="./figures/p8_30000_cmp.png" height="400px" width="700px" >
-<img src="./figures/p8_50000_cmp.png" height="400px" width="700px" >
+<img src="./figures/p8_10000_cmp.png" height="400px" width="500px" >
+<img src="./figures/p8_30000_cmp.png" height="400px" width="500px" >
+<img src="./figures/p8_50000_cmp.png" height="400px" width="500px" >
 
 As we can see from the above three figures, **while increasing the learning rate from 0.0025 to 0.02 speeds up the training and increases the AverageReturn, increasing it further to 0.04 deteriorates the performance. Therefore, we should be catious in setting the learning rate**.
 
@@ -114,9 +114,10 @@ As we can see from the above three figures, **while increasing the learning rate
 ```
 I used the learning rate (`r*`) of 0.02 and batch size (`b*`) of 50000.
 
-<img src="./figures/p8_best_cmp.png" height="400px" width="700px" >
+<img src="./figures/p8_best_cmp.png" height="400px" width="500px" >
 
-As we can see from the above figure, reward to go (`rtg`) makes the training faster. However, implementing a value function as astate-dependent neural network baseline (`baseline`) does not seem to have an effect on the training performance.
+As we can see from the above figure, reward to go (`rtg`) makes the training faster. However, implementing a value function as a
+state-dependent neural network baseline (`baseline`) does not seem to have an effect on the training performance.
 
 
 ### Todos
