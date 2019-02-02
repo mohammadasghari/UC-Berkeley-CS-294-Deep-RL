@@ -7,7 +7,7 @@ and the **DAgger** algorithm.
 ## Answers
 
 ### Section 2. Behavioral Cloning:
-1. *Run behavioral cloning (BC) and report results on two tasks { one task where a behavioral cloning agent achieves comparable performance to the expert, and one task where it does not. When providing results, report the mean and standard deviation of the return over multiple rollouts in a table, and state which task was used.*
+1. *Run behavioral cloning (BC) and report results on two tasks one task where a behavioral cloning agent achieves comparable performance to the expert, and one task where it does not. When providing results, report the mean and standard deviation of the return over multiple rollouts in a table, and state which task was used.*
 	
 	Task: `Ant`
 
@@ -22,7 +22,7 @@ and the **DAgger** algorithm.
 	|  | mean  |	standard deviation 
 	|--|--|--|	
 	| expert agent  |    <span style="color:blue">   5515.39  </span>         | 52.61
-	|  behavioral agent |     <span style="color:red">  1062.403    </span>        | <span style="color:green">  949.42 </span>
+	|  behavioral cloning agent |     <span style="color:red">  1062.403    </span>        | <span style="color:green">  949.42 </span>
 	
 	
 	
@@ -46,7 +46,7 @@ Task: `Walker2d`
 	|  | mean  |	standard deviation |
 	|--|--|--|	
 	| expert agent  |   <span style="color:blue">  4878.46   </span>         | 112.68
-	|  behavioral cloning agent |    <span style="color:blue">    4806.99          </span>| 82.81
+	|  DAgger agent |    <span style="color:blue">    4806.99          </span>| 82.81
 
 
 	Task: `Walker2d`
@@ -54,7 +54,7 @@ Task: `Walker2d`
 	|  | mean  |	standard deviation 
 	|--|--|--|	
 	| expert agent  |    <span style="color:blue">   5515.39  </span>         | 52.61
-	|  behavioral agent |     <span style="color:red">  3428.693    </span>        | <span style="color:green">  2397.68 </span>
+	|  DAgger agent |     <span style="color:red">  3428.693    </span>        | <span style="color:green">  2397.68 </span>
 	
 	
 	
