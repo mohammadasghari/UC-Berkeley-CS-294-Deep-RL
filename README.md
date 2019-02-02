@@ -10,4 +10,4 @@ I would like to thank the instructor and the TAs for making this wonderful cours
 
 ## Code structure
 - `./hw1/`: contains code for the implementation of **imitation learning**, including direct **behavior cloning** and the **DAgger** algorithm See my report for this homework [here](./hw1/README.md). 
-- `./hw2/`: contains code for the implementation of **policy gradient** and its variants, including *variance reduction methods.* See my report for this homework [here](./hw2/README.md). 
+- `./hw2/`: contains code for the implementation of **policy gradient** and its variants, including **variance reduction methods**. See my report for this homework [here](./hw2/README.md). 
