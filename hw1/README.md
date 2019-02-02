@@ -30,12 +30,12 @@ and the **DAgger** algorithm.
 	
 	Task: `Ant`
 
-<img src="./figures/expert_Ant-v2behavioral_cloning.png" height="400px" width="700px" >
+<img src="./figures/expert_Ant-v2behavioral_cloning.png" height="400px" width="500px" >
 
 
-	Task: `Walker2d`
+Task: `Walker2d`
 	
-<img src="./figures/expert_Walker2d-v2behavioral_cloning.png" height="400px" width="700px" >
+<img src="./figures/expert_Walker2d-v2behavioral_cloning.png" height="400px" width="500px" >
 
 
 ### Section 2. Behavioral Cloning:
@@ -62,21 +62,20 @@ and the **DAgger** algorithm.
 	
 	Task: `Ant`
 
-<img src="./figures/expert_Ant-v2dagger.png" height="400px" width="700px" >
-
-
-	Task: `Walker2d`
+<img src="./figures/expert_Ant-v2dagger.png" height="400px" width="500px">
 	
-<img src="./figures/expert_Walker2d-v2dagger.png" height="400px" width="700px" >
+Task: `Walker2d`
+	
+<img src="./figures/expert_Walker2d-v2dagger.png" height="400px" width="500px" >
 	
 	
 If we increase the number of rollouts, as we can see from the figures below, the performance of the DAgger agent is getting closer and closer to the expert agent.
 
 Task: `Walker2d`
 
-<img src="./figures/expert_Walker2d-v2behavioral_cloning2.png" height="400px" width="700px" >
+<img src="./figures/expert_Walker2d-v2behavioral_cloning2.png" height="400px" width="500px" >
 	
-<img src="./figures/expert_Walker2d-v2dagger2.png" height="400px" width="700px" >
+<img src="./figures/expert_Walker2d-v2dagger2.png" height="400px" width="500px" >
 
 ### Todos
 
