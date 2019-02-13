@@ -46,10 +46,10 @@ The next experiment I did was to fix the *replay buffer size* to 500000 and chan
 1. **Question 1: Sanity check with Cartpole.** *Now that you have implemented actor-critic, check that your solution works by running Cartpole-v0. Compare the results for the following settings and report which worked best*
 
 ```Bash
-   	python3.5 ./train_ac_f18.py CartPole-v0 -n 100 -b 1000 -e 3 --exp_name ntu_1_ngsptu_1 -ntu 1 -ngsptu 1
-	python3.5 ./train_ac_f18.py CartPole-v0 -n 100 -b 1000 -e 3 --exp_name ntu_100_ngsptu_1 -ntu 100 -ngsptu 1
-	python3.5 ./train_ac_f18.py CartPole-v0 -n 100 -b 1000 -e 3 --exp_name ntu_1_ngsptu_100 -ntu 1 -ngsptu 100
-	python3.5 ./train_ac_f18.py CartPole-v0 -n 100 -b 1000 -e 3 --exp_name ntu_10_ngsptu_10 -ntu 10 -ngsptu 10
+python3.5 ./train_ac_f18.py CartPole-v0 -n 100 -b 1000 -e 3 --exp_name ntu_1_ngsptu_1 -ntu 1 -ngsptu 1
+python3.5 ./train_ac_f18.py CartPole-v0 -n 100 -b 1000 -e 3 --exp_name ntu_100_ngsptu_1 -ntu 100 -ngsptu 1
+python3.5 ./train_ac_f18.py CartPole-v0 -n 100 -b 1000 -e 3 --exp_name ntu_1_ngsptu_100 -ntu 1 -ngsptu 100
+python3.5 ./train_ac_f18.py CartPole-v0 -n 100 -b 1000 -e 3 --exp_name ntu_10_ngsptu_10 -ntu 10 -ngsptu 10
 
 ```
 In these experiments, `ntu` is the number of target updates for the critic and `ngsptu` is the number of gradient steps per target update. As we can see from the figure below, the case with `-ntu 1 -ngsptu 1` does not work and by increasing both the number of target updates and number of gradient updates, the performance improves. The best performance is observed for `-ntu 10 -ngsptu 10`.
@@ -61,7 +61,7 @@ In these experiments, `ntu` is the number of target updates for the critic and `
 
 ##### `InvertedPendulum`
 ```Bash
-   	python3.5 train_ac_f18.py InvertedPendulum-v2 -ep 1000 --discount 0.95 -n 100 -e 3 -l 2 -s 64 -b 5000 -lr 0.01 --exp_name ntu_10_ngsptu_10 -ntu 10 -ngsptu 10
+python3.5 train_ac_f18.py InvertedPendulum-v2 -ep 1000 --discount 0.95 -n 100 -e 3 -l 2 -s 64 -b 5000 -lr 0.01 --exp_name ntu_10_ngsptu_10 -ntu 10 -ngsptu 10
 ```
 
 <img src="./figures/ac_2.png" height="400px" width="500px" >
@@ -69,7 +69,7 @@ In these experiments, `ntu` is the number of target updates for the critic and `
 ##### `HalfCheetah` 
 
 ```Bash
-	python3.5 train_ac_f18.py HalfCheetah-v2 -ep 150 --discount 0.90 -n 100 -e 3 -l 2 -s 32 -b 30000 -lr 0.02 --exp_name ntu_10_ngsptu_10 -ntu 10 -ngsptu 10
+python3.5 train_ac_f18.py HalfCheetah-v2 -ep 150 --discount 0.90 -n 100 -e 3 -l 2 -s 32 -b 30000 -lr 0.02 --exp_name ntu_10_ngsptu_10 -ntu 10 -ngsptu 10
 
 ```
 <img src="./figures/ac_3.png" height="400px" width="500px" >
@@ -81,9 +81,9 @@ I did this extra set of experiments myself to see the performance comparison bet
 ##### `InvertedPendulum`
 
 ```Bash
-	python3.5 train_pg_f18.py InvertedPendulum-v2 -ep 1000 --discount 0.95 -n 100 -e 3 -l 2 -s 64 -b 5000 -lr 0.01 --exp_name policy_gradient
-	python3.5 train_pg_f18.py InvertedPendulum-v2 -ep 1000 --discount 0.95 -n 100 -e 3 -l 2 -s 64 -b 5000 -lr 0.01 --nn_baseline --exp_name policy_gradient_baseline
-	python3.5 train_ac_f18.py InvertedPendulum-v2 -ep 1000 --discount 0.95 -n 100 -e 3 -l 2 -s 64 -b 5000 -lr 0.01 --exp_name actor_critic -ntu 10 -ngsptu 10
+python3.5 train_pg_f18.py InvertedPendulum-v2 -ep 1000 --discount 0.95 -n 100 -e 3 -l 2 -s 64 -b 5000 -lr 0.01 --exp_name policy_gradient
+python3.5 train_pg_f18.py InvertedPendulum-v2 -ep 1000 --discount 0.95 -n 100 -e 3 -l 2 -s 64 -b 5000 -lr 0.01 --nn_baseline --exp_name policy_gradient_baseline
+python3.5 train_ac_f18.py InvertedPendulum-v2 -ep 1000 --discount 0.95 -n 100 -e 3 -l 2 -s 64 -b 5000 -lr 0.01 --exp_name actor_critic -ntu 10 -ngsptu 10
 
 ```
 
@@ -95,9 +95,9 @@ As we can see from the figure below, the performance of all three methods are al
 ##### `HalfCheetah` 
 
 ```Bash
-	python3.5 train_pg_f18.py HalfCheetah-v2 -ep 150 --discount 0.90 -n 100 -e 3 -l 2 -s 32 -b 30000 -lr 0.02 --exp_name policy_gradient
-	python3.5 train_pg_f18.py HalfCheetah-v2 -ep 150 --discount 0.90 -n 100 -e 3 -l 2 -s 32 -b 30000 -lr 0.02 --nn_baseline --exp_name policy_gradient_baseline
-	python3.5 train_ac_f18.py HalfCheetah-v2 -ep 150 --discount 0.90 -n 100 -e 3 -l 2 -s 32 -b 30000 -lr 0.02 --exp_name actor_critic -ntu 10 -ngsptu 10
+python3.5 train_pg_f18.py HalfCheetah-v2 -ep 150 --discount 0.90 -n 100 -e 3 -l 2 -s 32 -b 30000 -lr 0.02 --exp_name policy_gradient
+python3.5 train_pg_f18.py HalfCheetah-v2 -ep 150 --discount 0.90 -n 100 -e 3 -l 2 -s 32 -b 30000 -lr 0.02 --nn_baseline --exp_name policy_gradient_baseline
+python3.5 train_ac_f18.py HalfCheetah-v2 -ep 150 --discount 0.90 -n 100 -e 3 -l 2 -s 32 -b 30000 -lr 0.02 --exp_name actor_critic -ntu 10 -ngsptu 10
 
 ```
 
