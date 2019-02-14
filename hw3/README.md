@@ -2,6 +2,20 @@
 
 The goal of this assignment was to experiment with **Deep Q-Learning** and **Actor-Critic**. This assignment has two parts: In part 1, we implement and evaluate Q-learning with convolutional neural networks for playing Atari games. In part 2, we need to modify the policy gradient (from hw2) to an actor-critic formulation.
 
+## Videos
+Below you can see some cool videos showing the comparison between the learning agent before and after training using **Deep Q-Learning**.
+
+|  |Before training  |	After training 	
+|--|--|--|	
+| LunarLander | <img src="./videos/LunarLander-wo-learning-ddqn.gif" height="400px" width="400px" > | <img src="./videos/LunarLander-w-learning-ddqn.gif" height="400px" width="400px" > |
+
+|  | Pong Atari  	
+|--|--|--|	
+| After 0 timesteps | <img src="./videos/Pong_0K.gif" height="400px" width="400px" > |
+| After 500K timesteps | <img src="./videos/Pong_500K.gif" height="400px" width="400px" > |
+| After 1M timesteps | <img src="./videos/Pong_1000K.gif" height="400px" width="400px" > |
+| After 1.5M timesteps | <img src="./videos/Pong_1500K.gif" height="400px" width="400px" > |
+| After 2M timesteps | <img src="./videos/Pong_2000K.gif" height="400px" width="400px" > |
 
 ## Answers
 ### Part 1 (Deep Q-learning)
