@@ -10,7 +10,7 @@ Below you can see some cool videos showing the comparison between the learning a
 | LunarLander | <img src="./videos/LunarLander-wo-learning-ddqn.gif" height="400px" width="400px" > | <img src="./videos/LunarLander-w-learning-ddqn.gif" height="400px" width="400px" > |
 
 |  | Pong Atari  	
-|--|--|--|	
+|--|--|
 | After 0 timesteps | <img src="./videos/Pong_0K.gif" height="400px" width="400px" > |
 | After 500K timesteps | <img src="./videos/Pong_500K.gif" height="400px" width="400px" > |
 | After 1M timesteps | <img src="./videos/Pong_1000K.gif" height="400px" width="400px" > |
