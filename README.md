@@ -31,4 +31,4 @@ I would like to thank the instructor and the TAs for making this wonderful cours
 |--|--|--|--|--|
 | <img src="./videos/Pong_0K.gif" height="200px" width="200px" > |<img src="./videos/Pong_500K.gif" height="200px" width="200px" > |<img src="./videos/Pong_1000K.gif" height="200px" width="200px"> |<img src="./videos/Pong_1500K.gif" height="200px" width="200px"> |<img src="./videos/Pong_2000K.gif" height="200px" width="200px" >|
 
-- `./hw4/`: contains code for the implementation of an algorithm for the **model-based reinforcement learning (MBRL)**. See my report for this homework [here](./hw3/README.md). 
+- `./hw4/`: contains code for the implementation of an algorithm for the **model-based reinforcement learning (MBRL)**. See my report for this homework [here](./hw4/README.md). 
