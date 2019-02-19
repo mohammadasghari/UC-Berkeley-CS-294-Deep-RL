@@ -19,13 +19,13 @@ I would like to thank the instructor and the TAs for making this wonderful cours
 | InvertedPendulum | <img src="./videos/InvertedPendulum-wo-learning.gif" height="300px" width="300px" > | <img src="./videos/InvertedPendulum-w-learning.gif" height="300px" width="300px" > |
 | HalfCheetah | <img src="./videos/HalfCheetah-wo-learning.gif" height="300px" width="300px" > | <img src="./videos/HalfCheetah-w-learning.gif" height="300px" width="300px" > |
 
-- `./hw3/`: contains code for the implementation of **Deep Q-Learning** and **Actor-Critic**. See my report for this homework [here](./hw3/README.md). Below you can see some cool videos showing the comparison between the learning agent before and after training using **Deep Q-Learning**.
+- `./hw3/`: contains code for the implementation of **Deep Q-Learning** and **Actor-Critic**. See my report for this homework [here](./hw3/README.md). Below you can see some cool videos showing the comparison between the learning agent before and after training using Deep Q-Learning.
 
 |  |Before training  |	After training 	
 |--|--|--|	
 | LunarLander | <img src="./videos/LunarLander-wo-learning-ddqn.gif" height="300px" width="300px" > | <img src="./videos/LunarLander-w-learning-ddqn.gif" height="300px" width="300px" > |
 
-Pong Atari (green pedal is controlled by our learning agent) 
+`Pong Atari (green pedal is controlled by our learning agent) `
 
 | After 0 timesteps | 	After 500K timesteps | After 1M timesteps | After 1.5M timesteps | After 2M timesteps
 |--|--|--|--|--|
