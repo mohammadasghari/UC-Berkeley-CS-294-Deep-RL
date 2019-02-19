@@ -19,25 +19,25 @@ We will be implementing both the learned dynamics model and the controller in th
    python main.py q1 --exp_name exp
 ```
 
-<img src="./figures/prediction_000.jpg" height="400px" width="500px" >
+<img src="./figures/prediction_000.jpg" height="600px" width="600px" >
 
-<img src="./figures/prediction_001.jpg" height="400px" width="500px" >
+<img src="./figures/prediction_001.jpg" height="600px" width="600px" >
 
-<img src="./figures/prediction_002.jpg" height="400px" width="500px" >
+<img src="./figures/prediction_002.jpg" height="600px" width="600px" >
 
-<img src="./figures/prediction_003.jpg" height="400px" width="500px" >
+<img src="./figures/prediction_003.jpg" height="600px" width="600px" >
 
-<img src="./figures/prediction_004.jpg" height="400px" width="500px" >
+<img src="./figures/prediction_004.jpg" height="600px" width="600px" >
 
-<img src="./figures/prediction_005.jpg" height="400px" width="500px" >
+<img src="./figures/prediction_005.jpg" height="600px" width="600px" >
 
-<img src="./figures/prediction_006.jpg" height="400px" width="500px" >
+<img src="./figures/prediction_006.jpg" height="600px" width="600px" >
 
-<img src="./figures/prediction_007.jpg" height="400px" width="500px" >
+<img src="./figures/prediction_007.jpg" height="600px" width="600px" >
 
-<img src="./figures/prediction_008.jpg" height="400px" width="500px" >
+<img src="./figures/prediction_008.jpg" height="600px" width="600px" >
 
-<img src="./figures/prediction_009.jpg" height="400px" width="500px" >
+<img src="./figures/prediction_009.jpg" height="600px" width="600px" >
 
 2. *Which state dimension are the predictions the most inaccurate?*
 
